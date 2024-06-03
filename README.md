@@ -1,3 +1,3 @@
-# Ubuntu20.04
+# Useful Scripts
 Pterodactyl Update Script Update.sh
 etc
