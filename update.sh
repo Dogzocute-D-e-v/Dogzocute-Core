@@ -10,6 +10,8 @@ php artisan migrate --seed --force
 chown -R www-data:www-data /var/www/pterodactyl/*
 php artisan queue:restart
 php artisan up
+clear
+echo "             ✔️  Panel Updated ✔️      "
 echo "         Thanks for using a script made by"
 echo "                💖 Dogzocute 💖"
 rm -f update.sh
