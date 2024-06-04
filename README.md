@@ -1,6 +1,12 @@
+[Dogzocute's Core](https://github.com/Dogzocute-D-e-v/Dogzocute-Core)
+
 # 🐦 Useful Scripts
-Pterodactyl Update Script Update.sh
-etc
+
+Pterodactyl Scripts:
+- Install
+- Update
+- Remove
+
 # Install Script
 Usage:
 Download and execute the script. Answer the questions asked by the script and it will take care of the rest.
