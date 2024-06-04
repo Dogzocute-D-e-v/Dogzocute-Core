@@ -22,7 +22,7 @@ cp .env.example .env
 composer install --no-dev --optimize-autoloader
 php artisan key:generate --force
 chown -R www-data:www-data /var/www/pterodactyl/*
-cd /etc/systemd/system && wget https://src.dogzocute.space/pteroq.service && sudo systemctl enable --now pteroq.service
+cd /etc/systemd/system && wget https://src.dogzocute.space/scripts/extras/pteroq.service && sudo systemctl enable --now pteroq.service
 rm /etc/nginx/sites-enabled/default
 clear
 echo "⚡ Finished installing the Packages & Configuring ⚡"
