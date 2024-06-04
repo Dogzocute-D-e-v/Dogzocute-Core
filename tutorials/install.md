@@ -153,7 +153,7 @@ do:
 mysql -u root -p
 ```
 Creating a user
-# You should change the username and password below to something unique.
+``You should change the username and password below to something unique.``
 ```sql
 CREATE USER 'pterodactyluser'@'%' IDENTIFIED BY 'somepassword';
 GRANT ALL PRIVILEGES ON *.* TO 'pterodactyluser'@'%' WITH GRANT OPTION;
