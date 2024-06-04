@@ -11,8 +11,18 @@ CREATE DATABASE panel;
 GRANT ALL PRIVILEGES ON panel.* TO 'pterodactyl'@'127.0.0.1' WITH GRANT OPTION;
 exit
 ```
+recommended things to do for you mysql db
 
-#Environment Configuration
+# Allowing external database access
+Chances are you'll need to allow external access to this MySQL instance in order to allow servers to connect to it. To do this, open ``my.cnf``, which varies in location depending on your OS and how MySQL was installed. You can type ``find /etc -iname my.cnf`` to locate it.
+
+Open ``my.cnf``, add text below to the bottom of the file and save it:
+```cnf
+[mysqld]
+bind-address=0.0.0.0
+```
+
+# Environment Configuration
 
 Pterodactyl's core environment is easily configured using a few different CLI commands built into the app. This step will cover setting up things such as sessions, caching, database credentials, and email sending.
 
@@ -134,3 +144,21 @@ after do:
 sudo ln -s /etc/nginx/sites-available/pterodactyl.conf /etc/nginx/sites-enabled/pterodactyl.conf && sudo systemctl restart nginx
 ```
 bam and you are done :D
+
+# Extras
+This section covers creating a MySQL user that has permission to create and modify users. This allows the Panel to create per-server databases on the given host.
+
+do:
+```bash
+mysql -u root -p
+```
+Creating a user
+# You should change the username and password below to something unique.
+```sql
+CREATE USER 'pterodactyluser'@'%' IDENTIFIED BY 'somepassword';
+GRANT ALL PRIVILEGES ON *.* TO 'pterodactyluser'@'%' WITH GRANT OPTION;
+```
+
+Give my repo a ⭐ if you enjoyed using my scripts :D
+
+
