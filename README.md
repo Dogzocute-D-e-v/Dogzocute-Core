@@ -51,6 +51,4 @@ php artisan migrate --seed --force
 chown -R www-data:www-data /var/www/pterodactyl/*
 php artisan queue:restart
 php artisan up
-rm -f update.sh
-echo "Pterodactyl Panel was Updated!"
 ```
