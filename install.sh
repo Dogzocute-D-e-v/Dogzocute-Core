@@ -1,8 +1,9 @@
-echo "                 ⚠️ Warning ⚠️                        "
-echo "this is not a full install of Pterodactyl"
+clear
+echo "                 ⚠️  Warning ⚠️                        "
+echo "    this is not a full install of Pterodactyl       "
 echo "you will still need to do a few commands you're self"
 echo "please read the description under the script command"
-echo "this script will continue in 45 seconds"
+echo "      this script will continue in 45 seconds       "
 sleep 45
 apt -y install software-properties-common curl apt-transport-https ca-certificates gnupg
 LC_ALL=C.UTF-8 add-apt-repository -y ppa:ondrej/php
@@ -22,3 +23,12 @@ composer install --no-dev --optimize-autoloader
 php artisan key:generate --force
 chown -R www-data:www-data /var/www/pterodactyl/*
 cd /etc/systemd/system && wget https://src.dogzocute.space/pteroq.service && sudo systemctl enable --now pteroq.service
+clear
+echo "⚡ Finished installing the Packages & Configuring ⚡"
+echo "   ⚠️  please refer to the script description ⚠️    "
+echo "         Thanks for using a script made by"
+echo "                💖 Dogzocute 💖"
+sleep 5
+clear
+rm -f install.sh
+
