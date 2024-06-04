@@ -38,4 +38,4 @@ cd /var/www/pterodactyl && wget https://src.dogzocute.space/scripts/remove.sh &&
 
 what's inside of update.sh
 
-[update.sh](https://github.com/Dogzocute-D-e-v/useful-scripts/blob/main/remove.sh)
+[remove.sh](https://github.com/Dogzocute-D-e-v/useful-scripts/blob/main/remove.sh)
