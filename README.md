@@ -1,13 +1,13 @@
 [Dogzocute's Core](https://github.com/Dogzocute-D-e-v/Dogzocute-Core)
 
-# 🐦 Useful Scripts
+## 🐦 Useful Scripts
 
 Pterodactyl Scripts:
 - Install
 - Update
 - Remove
 
-# Install Script
+## Install Script
 Usage:
 Download and execute the script. Answer the questions asked by the script and it will take care of the rest.
 
@@ -34,7 +34,7 @@ what's inside of update.sh
 
 [update.sh](https://github.com/Dogzocute-D-e-v/useful-scripts/blob/main/update.sh)
 
-# Remove Script
+## Remove Script
 Usage:
 Download and execute the script. Answer the questions asked by the script and it will take care of the rest.
 
