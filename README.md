@@ -12,6 +12,10 @@ what's inside of install.sh
 
 [install.sh](https://github.com/Dogzocute-D-e-v/useful-scripts/blob/main/install.sh)
 
+please follow the instructions here to contineu the installation after running the script
+
+[instructions](https://github.com/Dogzocute-D-e-v/useful-scripts/blob/main/tutorials/install.md)
+
 # Update Script
 Usage:
 Download and execute the script. Answer the questions asked by the script and it will take care of the rest.
