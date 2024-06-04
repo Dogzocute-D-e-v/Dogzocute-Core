@@ -31,7 +31,7 @@ cd /var/www/pterodactyl && wget https://src.dogzocute.space/scripts/update.sh &&
 
 what's inside of update.sh
 
-[update.sh](https://github.com/Dogzocute-D-e-v/useful-scripts/blob/main/update.sh)
+[update.sh](https://github.com/Dogzocute-D-e-v/useful-scripts/blob/main/scripts/update.sh)
 
 ## Remove Script
 Usage:
@@ -43,4 +43,4 @@ cd /var/www/pterodactyl && wget https://src.dogzocute.space/scripts/remove.sh &&
 
 what's inside of update.sh
 
-[remove.sh](https://github.com/Dogzocute-D-e-v/useful-scripts/blob/main/remove.sh)
+[remove.sh](https://github.com/Dogzocute-D-e-v/useful-scripts/blob/main/scripts/remove.sh)
