@@ -3,8 +3,8 @@ echo "                 ⚠️  Warning ⚠️                        "
 echo "    this is not a full install of Pterodactyl       "
 echo "you will still need to do a few commands you're self"
 echo "please read the description under the script command"
-echo "      this script will continue in 45 seconds       "
-sleep 45
+echo "      this script will continue in 5 seconds       "
+sleep 5
 apt -y install software-properties-common curl apt-transport-https ca-certificates gnupg
 LC_ALL=C.UTF-8 add-apt-repository -y ppa:ondrej/php
 curl -fsSL https://packages.redis.io/gpg | sudo gpg --dearmor -o /usr/share/keyrings/redis-archive-keyring.gpg
@@ -29,6 +29,6 @@ echo "⚡ Finished installing the Packages & Configuring ⚡"
 echo "   ⚠️  please refer to the script description ⚠️    "
 echo "         Thanks for using a script made by"
 echo "                💖 Dogzocute 💖"
-sleep 5
+sleep 3
 clear
 rm -f install.sh
