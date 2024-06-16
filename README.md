@@ -5,6 +5,7 @@ Pterodactyl Scripts:
 - Install
 - Update
 - Remove
+- More verry soon : )
 
 ## Install Script
 Usage:
