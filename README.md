@@ -39,7 +39,7 @@ Usage:
 Download and execute the script. Answer the questions asked by the script and it will take care of the rest.
 
 ```bash
-cd /var/www/pterodactyl && wget https://src.dogzocute.space/scripts/remove.sh && bash update.sh
+cd /var/www/pterodactyl && wget https://src.dogzocute.space/scripts/remove.sh && bash remove.sh
 ```
 
 what's inside of update.sh
