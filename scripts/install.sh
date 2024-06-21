@@ -4,7 +4,7 @@ echo "    this is not a full install of Pterodactyl       "
 echo "you will still need to do a few commands you're self"
 echo "please read the description under the script command"
 echo "      this script will continue in 5 seconds       "
-sleep 5
+sleep 3
 apt -y install software-properties-common curl apt-transport-https ca-certificates gnupg
 LC_ALL=C.UTF-8 add-apt-repository -y ppa:ondrej/php
 curl -fsSL https://packages.redis.io/gpg | sudo gpg --dearmor -o /usr/share/keyrings/redis-archive-keyring.gpg
