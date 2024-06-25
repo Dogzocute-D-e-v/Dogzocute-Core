@@ -7,7 +7,7 @@ Pterodactyl Scripts:
 - Remove
 - More verry soon : )
 
-## Install Script
+## Install Script (WARNING THIS SCRIPT CURRENTLY DOSEN'T WORK)
 Usage:
 Download and execute the script. Answer the questions asked by the script and it will take care of the rest.
 
