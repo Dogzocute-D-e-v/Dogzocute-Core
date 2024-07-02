@@ -1,3 +1,4 @@
+echo "executing the script"
 clear
 echo "                 ⚠️  Warning ⚠️                        "
 echo "    this is not a full install of Pterodactyl       "
