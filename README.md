@@ -12,7 +12,7 @@ Usage:
 Download and execute the script. Answer the questions asked by the script and it will take care of the rest.
 
 ```bash
-cd /root wget https://src.dogzocute.space/scripts/install.sh && bash install.sh
+cd /root && wget https://src.dogzocute.space/scripts/install.sh && bash install.sh
 ```
 what's inside of install.sh
 
