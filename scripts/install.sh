@@ -7,7 +7,13 @@ echo "    this is not a full install of Pterodactyl       "
 echo "you will still need to do a few commands yourself"
 echo "please read the description under the script command"
 echo "      this script will continue in 10 seconds       "
-sleep 10
+sleep 1
+
+# Countdown from 10 seconds
+for i in {10..1}; do
+    echo -ne "$i\033[0K\r"
+    sleep 1
+done
 
 # Update and install necessary packages
 apt update
@@ -43,10 +49,24 @@ composer install --no-dev --optimize-autoloader
 php artisan key:generate --force
 chown -R www-data:www-data /var/www/pterodactyl/*
 
+# Configure cron job
+CRON_COMMAND="* * * * * php /var/www/pterodactyl/artisan schedule:run >> /dev/null 2>&1"
+
+# Echo the cron command into the crontab
+echo "$CRON_COMMAND" | sudo crontab -u root -
+
+echo "Crontab configured successfully."
+
 # Enable and start Pterodactyl Queue Worker
 cd /etc/systemd/system
 wget https://src.dogzocute.space/scripts/extras/pteroq.service
 systemctl enable --now pteroq.service
+
+# Enable Redis & Pteroq on startup!
+
+sudo systemctl enable --now redis-server
+sudo systemctl enable --now pteroq.service
+echo "Enabled Redis & Pteroq on startup!"
 
 # Remove the default Nginx site configuration
 rm /etc/nginx/sites-enabled/default
@@ -54,13 +74,19 @@ rm /etc/nginx/sites-enabled/default
 # Restart Nginx to apply changes
 systemctl restart nginx
 
-# Clear the screen and display the completion message
-clear
+# Display completion message
 echo "⚡ Finished installing the Packages & Configuring ⚡"
 echo "   ⚠️  please refer to the script description ⚠️    "
 echo "         Thanks for using a script made by"
 echo "                💖 Dogzocute 💖"
-sleep 3
+
+# Countdown from 3 seconds
+for i in {20..1}; do
+    echo -ne "Script will self-destruct in $i seconds\033[0K\r"
+    sleep 1
+done
+
+# Clear the screen
 clear
 
 # Remove the script itself
