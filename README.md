@@ -46,7 +46,7 @@ what's inside of install.sh
 
 [install.sh](https://github.com/Dogzocute-D-e-v/useful-scripts/blob/main/scripts/install.sh)
 
-please follow the instructions here to contineu the installation after running the script
+please follow the instructions here to continue the installation after running the script
 
 [instructions](https://github.com/Dogzocute-D-e-v/useful-scripts/blob/main/tutorials/install.md)
 
