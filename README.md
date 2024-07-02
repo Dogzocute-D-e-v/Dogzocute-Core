@@ -1,5 +1,5 @@
 ## 🐦 Useful Scripts
-[Github](https://github.com/Dogzocute-D-e-v/Dogzocute-Core)
+<!--[Github](https://github.com/Dogzocute-D-e-v/Dogzocute-Core) -->
 
 | Pterodactyl Scripts | Avaiavailable |
 |:------------:|:-------------:|
